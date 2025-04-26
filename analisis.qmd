@@ -25,15 +25,15 @@ header-includes:
 
 # Introducción
 <div style="text-align: justify;">
-El origen del guisante (Pisum sativum L.) se encuentra en la región del Mediterráneo, principalmente en el Medio Oriente, donde fue domesticado. Fue una parte esencial de la dieta de los cazadores-recolectores al final de la última Edad de Hielo, tanto en el Medio Oriente como en Europa. Evidencias arqueológicas de los milenios X y IX a.C. indican que los guisantes, junto con otras legumbres como las arvejas y los garbanzos, eran consumidos comúnmente antes de ser cultivados. Esto sugiere que la domesticación de las legumbres, incluidos los guisantes, podría haberse producido antes que la de los cereales, marcando una parte significativa de la revolución agrícola que facilitó el establecimiento de asentamientos permanentes.
+El origen del guisante (Pisum sativum L.) se encuentra en la región del Mediterráneo, principalmente en el Medio Oriente, donde fue domesticado. Fue una parte esencial de la dieta de los cazadores-recolectores al final de la última Edad de Hielo, tanto en el Medio Oriente como en Europa. Evidencias arqueológicas de los milenios X y IX a.C. indican que los guisantes, junto con otras legumbres como las arvejas y los garbanzos, eran consumidos comúnmente antes de ser cultivados. Esto sugiere que la domesticación de las legumbres, incluidos los guisantes, podría haberse producido antes que la de los cereales, marcando una parte significativa de la revolución agrícola que facilitó el establecimiento de asentamientos permanentes (Ghaleb et al., 2022).
 
-Los esfuerzos de selección y mejora durante siglos han dado lugar al desarrollo de miles de variedades de guisantes, que ahora se mantienen en colecciones de germoplasma en todo el mundo. Los ancestros silvestres del guisante se encuentran en Irán, Turkmenistán y en partes del norte de África y el sur de Europa.
+Los esfuerzos de selección y mejora durante siglos han dado lugar al desarrollo de miles de variedades de guisantes, que ahora se mantienen en colecciones de germoplasma en todo el mundo. Los ancestros silvestres del guisante se encuentran en Irán, Turkmenistán y en partes del norte de África y el sur de Europa (Ghaleb et al., 2022).
 
-El cultivo de la arveja (Pisum sativum L.) es fundamental por sus beneficios nutricionales y económicos, especialmente en regiones como el centro y la sierra norte de Ecuador. Su alto contenido proteico (24.1% en grano seco) la convierte en una fuente importante de nutrientes, contribuyendo a la seguridad alimentaria. Además, la arveja mejora la calidad del suelo al fijar nitrógeno, lo que reduce la dependencia de fertilizantes sintéticos y favorece la rotación de cultivos, promoviendo una agricultura más sostenible.
+El cultivo de la arveja (Pisum sativum L.) es fundamental por sus beneficios nutricionales y económicos, especialmente en regiones como el centro y la sierra norte de Ecuador. Su alto contenido proteico (24.1% en grano seco) la convierte en una fuente importante de nutrientes, contribuyendo a la seguridad alimentaria. Además, la arveja mejora la calidad del suelo al fijar nitrógeno, lo que reduce la dependencia de fertilizantes sintéticos y favorece la rotación de cultivos, promoviendo una agricultura más sostenible (Smýkal et al., 2012).
 
 Este cultivo se adapta bien a climas templados y fríos, permitiendo su cultivo a altitudes entre 2,400 y 3,200 metros sobre el nivel del mar. La posibilidad de obtener hasta dos cosechas anuales, especialmente en variedades de cosecha verde, favorece el rendimiento y tiene un impacto positivo en las economías rurales.
 
-La germinación del cultivo es un proceso crucial, ya que marca el comienzo del ciclo de vida de la planta y determina el éxito de su establecimiento. En condiciones óptimas, la germinación permite que las semillas liberen su potencial de crecimiento. Las temperaturas son uno de los factores ambientales más influyentes, ya que afectan tanto la velocidad de germinación como la capacidad total de germinación de las semillas. En general, las semillas germinan más rápidamente a temperaturas más altas, pero las bajas temperaturas, si se les da suficiente tiempo, también pueden permitir una buena germinación.
+La germinación del cultivo es un proceso crucial, ya que marca el comienzo del ciclo de vida de la planta y determina el éxito de su establecimiento. En condiciones óptimas, la germinación permite que las semillas liberen su potencial de crecimiento. Las temperaturas son uno de los factores ambientales más influyentes, ya que afectan tanto la velocidad de germinación como la capacidad total de germinación de las semillas. En general, las semillas germinan más rápidamente a temperaturas más altas, pero las bajas temperaturas, si se les da suficiente tiempo, también pueden permitir una buena germinación (Smýkal et al., 2012).
 </div>
 
 # Materiales y Métodos
@@ -212,10 +212,12 @@ Finch-Savage, B. (2013). Seeds: Physiology of development, germination and dorma
 
 Finch-Savage, W. E., & Leubner-Metzger, G. (2006). Seed dormancy and the control of germination. New Phytologist, 171(3), 501-523. https://doi.org/10.1111/j.1469-8137.2006.01787.x
 
+Ghaleb, W., Ahmed, L. Q., Wagner, M.-H., Eprinchard-Ciesla, A., Olivares-Rodríguez, W. E., Perrot, C., Chenu, K., Norton, M., & Escobar-Gutiérrez, A. J. (2022). The Concepts of Seed Germination Rate and Germinability: A Re-Evaluation for Cool-Season Grasses. Agronomy, 12(6), Article 6. https://doi.org/10.3390/agronomy12061291
 Gutterman, Y. (2002). Seed Germination: Theory and Practice.
 
 Karssen, C. M. (1995). Seed Dormancy and Germination in Plants.
 
 Lozano-Isla, Flavio; Benites-Alfaro, Omar Eduardo; Pompelli, Marcelo Francisco (2019). GerminaR: An R package for germination analysis with the interactive web application “GerminaQuant for R.” Ecological Research, 34(2), 339–346. https://doi.org/10.1111/1440-1703.1275
 
+Smýkal, P., Aubert, G., Burstin, J., Coyne, C. J., Ellis, N. T. H., Flavell, A. J., Ford, R., Hýbl, M., Macas, J., Neumann, P., McPhee, K. E., Redden, R. J., Rubiales, D., Weller, J. L., & Warkentin, T. D. (2012). Pea (Pisum sativum L.) in the Genomic Era. Agronomy, 2(2), Article 2. https://doi.org/10.3390/agronomy2020074
 
