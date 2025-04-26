@@ -13,8 +13,14 @@ format:
     number-sections: true
     embed-resources: true
     output-file: index
-editor_options: 
-  chunk_output_type: console
+header-includes:
+  - |
+    <style>
+      h1.title {
+        text-align: justify;
+        color: black;
+      }
+    </style>
 ---
 
 # Introducción
@@ -38,9 +44,8 @@ Las semillas de _Pisum sativum_ fueron adquiridas en el mercado central de la ci
 </div>
 ## Elaboracion de etiquetas
 <div style="text-align: justify;">
-Se utilizó el paquete GerminaR (Flavio-Lozano et al., 2019) para realizar etiquetas en R y analizar los principales índices de germinación, las etiquetas se eleboraron de acuerdo al siguiente código:
+Se utilizó huito que es un paquete R de código abierto que implementa etiquetas reproducibles y flexibles mediante capas. Para analizar datos se utilizo el paquete GermiaR (Flavio-Lozano et al., 2019), asi mismo se elaboró libreta de campo con tarpuy que es una plataforma interactiva para el planeamiento de experimentos. 
 </div>
-
 ```{r}
 source("https://inkaverse.com/setup.r")
 
@@ -130,47 +135,87 @@ label %>% label_print()
 ```
 ## Diseño experimental
 <div style="text-align: justify;">
-Se empleo un Diseño Completamente al Azar (DCA) con dos tratamientos (sin luz y con luz) cada tratamiento contó con 6 repeticiones y 25 unidades experimentales.Además, para la comparación de medias se empleo la prueba de Duncan.
+Se empleo un Diseño Completamente al Azar (DCA) con dos tratamientos (sin luz y con luz) cada tratamiento contó con 6 repeticiones y 25 unidades experimentales. Además, para la comparación de medias se empleo la prueba de Duncan.
 </div>
 
 # Resultados
 
+<div style="text-align: justify;">
+En este estudio se evaluó el efecto de la luz sobre la germinación de semillas mediante cuatro parámetros: semillas germinadas, tiempo medio de germinabilidad, velocidad de germinación, y variación de la germinación. Los resultados obtenidos indican que la presencia o ausencia de luz no tuvo un efecto estadísticamente significativo en ninguna de las variables evaluadas, como lo demuestra el análisis de los p-valores, todos superiores a 0.05.
+</div>
+
 ## Semillas germinadas (grs)
 
 <div style="text-align: justify;">
-Ambos tratamientos con y sin luz indican no presentar diferencias estadisticamente significativas dado que p > 0.05 con un p de 0.341. Es decir que la luz no tiene un efecto significativo sobre la variable evaluada. Ademas ambos tratamientos tienen una media de 25 teniendo el mismo valor de germinación, finalmente se tiene un coeficiente de variacion nulo donde no hubo variabilidad entre repeticiones, todos obtienen el mismo valor.
+Ambos tratamientos con y sin luz indican no presentar diferencias estadisticamente significativas dado que p > 0.05 con un p de 0.341. Es decir que la luz no tiene un efecto significativo sobre la variable evaluada. Ademas ambos tratamientos tienen una media de 25 semillas teniendo el mismo valor de germinación, finalmente se tiene un coeficiente de variacion nulo donde no hubo variabilidad entre repeticiones, todos obtienen el mismo valor.
 </div>
 
-![Figura 1.](grs.png)
+![Figura 1. La germinación fue al 100% para ambos tratamientos.](grs.png)
 
 <div style="text-align: justify;">
 A los 3 días se tiene una germinación casi al 100% para ambos tratamientos. Además se observa que con luz al 3 día hubo mayor germinación que sin luz.
 </div>
 
-![Figura 2](ger.png)
+![Figura 2. A partir del 2 y 3 día hubo una mayor germinación. ](ger.png)
 
 ## Tiempo medio de germinabilidad (mgt)
 
 <div style="text-align: justify;">
-El p-valor es 0.315, lo cual es mayor que 0.05. Esto indica que no hay una diferencia estadísticamente significativa entre los tratamientos con luz y sin luz en cuanto al tiempo medio de germinabilidad. El tiempo medio general en que germinaron las semillas es de 2.547 días.
+El p-valor es 0.315, lo cual es mayor que 0.05. Esto indica que no hay una diferencia estadísticamente significativa entre los tratamientos con luz y sin luz en cuanto al tiempo medio de germinabilidad. El tiempo medio general en que germinaron las semillas es de 2.547 días para el tratamiento sin luz.
 </div>
 
 
-![Figura 3](mgt.png)
+![Figura 3. Tiempo medio de germinabilidad no se encuentran diferencias significativas.](mgt.png)
 
 
 ## velocidad de germinación (gsp)
 
 <div style="text-align: justify;">
-No hay diferencias significativas entre los tratamientos con y sin luz respecto a la velocidad de germinación dado que el p-valor es 0.293 lo cual es mayor que 0.05. Es decir, la luz no tuvo un efecto estadísticamente significativo sobre la velocidad de germinación. El promedio general de volocidad de germinacion es 39.519 %.
+No hay diferencias significativas entre los tratamientos con y sin luz respecto a la velocidad de germinación dado que el p-valor es 0.293 lo cual es mayor que 0.05. Es decir, la luz no tuvo un efecto estadísticamente significativo sobre la velocidad de germinación. El promedio general de volocidad de germinacion es 39.519 % para el tratamiento sin luz.
 </div>
 
-![Figura 4](gsp.png)
+![Figura 4. El tratamiento con luz tiene mayor respuesta a velocidad de germinación pero aun asi no existen diferencias signitivas.](gsp.png)
 
 ## Variación de la germinación (vgt)
 
 <div style="text-align: justify;">
 
+No hay diferencias significativas puesto que el p-valor es superior a 0.05, siendo p = 0.529, entonces la luz no afecta significativamente la variación en la germinación bajo las condiciones evaluadas. El promedio de la variación de germinación es de 0.492 días^2 para el tratamiento sin luz.
+
 </div>
 
-![Figura 5](vgt.png)
+![Figura 5. El tratamiento sin luz tiene mayor respuesta pero no hay diferencias significativas con el tratamiento con luz.](vgt.png)
+
+# Discusión
+
+<div style="text-align: justify;">
+En cuanto al número de semillas germinadas, ambos tratamientos, con y sin luz, alcanzaron un 100% de germinación a los tres días. Este resultado es consistente con investigaciones previas que han sugerido que, para algunas especies de plantas, la luz no es un factor crucial para iniciar el proceso de germinación (Finch-Savage, 2013). Si bien la luz es conocida por ser un factor determinante en la germinación de algunas semillas, otros estudios han reportado que la falta de luz no siempre afecta negativamente la tasa de germinación, especialmente cuando las semillas son colocadas en condiciones de humedad y temperatura adecuadas (Gutterman, 2002).
+
+El tiempo medio de germinabilidad observado en este estudio fue de 2.547 días para el tratamiento sin luz, lo que indica que, aunque se puede observar un ligero efecto de la luz en la velocidad con la que las semillas germinan, las diferencias no fueron estadísticamente significativas (p = 0.315). Esto respalda los resultados de investigaciones previas que han señalado que el tiempo de germinación puede ser influenciado más por factores como la temperatura y la humedad que por la exposición a la luz (Finch-Savage & Leubner-Metzger, 2006). Además, otros estudios han demostrado que, para ciertos cultivos, la luz puede acelerar la germinación, pero no es un factor crítico (Karssen, 1995).
+
+En cuanto a la velocidad de germinación, la luz pareció tener un pequeño efecto, con un aumento en la velocidad en el tratamiento con luz. Sin embargo, la diferencia no fue significativa (p = 0.293). Este resultado es consistente con estudios como el de Bewley et al. (2013), quienes indican que la velocidad de germinación puede ser influenciada por diversos factores, pero no necesariamente de manera directa por la luz. Es importante señalar que la velocidad de germinación también depende de la calidad de la semilla, la temperatura, y la disponibilidad de agua, aspectos que probablemente jugaron un rol más relevante en este experimento.
+
+La variación en la germinación, que refleja la dispersión en los tiempos de germinación, tampoco mostró diferencias significativas entre los tratamientos (p = 0.529). Este hallazgo coincide con estudios previos que sugieren que la luz, en algunos casos, no afecta de manera significativa la uniformidad de la germinación, especialmente si las condiciones de humedad y temperatura son constantes (Baskin & Baskin, 2014). De acuerdo con Gutterman (2002), la variación en la germinación también puede depender de la genética de las semillas y de factores ambientales más allá de la luz.
+</div>
+
+# Conclusión
+
+<div style="text-align: justify;">
+Los resultados de este estudio indican que la luz no tiene un efecto significativo sobre la germinación de las semillas en cuanto a la cantidad de semillas germinadas, el tiempo medio de germinabilidad, la velocidad de germinación, ni la variación de la germinación. A pesar de que ciertos parámetros mostraron ligeras diferencias entre los tratamientos con y sin luz, estos no fueron estadísticamente significativos, lo que sugiere que bajo las condiciones evaluadas, la luz no es un factor determinante en el proceso de germinación de las semillas. Este hallazgo podría ser relevante para comprender las condiciones óptimas para la germinación de semillas en experimentos controlados, sugiriendo que factores adicionales podrían tener un mayor impacto en este proceso.
+</div>
+
+# Referencias bibliograficas
+
+Baskin, C. C., & Baskin, J. M. (2000). Seeds: ecology, biogeography, and, evolution of dormancy and germination. Academic press.
+
+Finch-Savage, B. (2013). Seeds: Physiology of development, germination and dormancy -JD Bewley, KJ Bradford, HWM Hilhorst H. Nonogaki. 392 pp. Springer, New York–Heidelberg–Dordrecht–London2013978-1-4614-4692-7. Seed Science Research, 23(4), 289-289.
+
+Finch-Savage, W. E., & Leubner-Metzger, G. (2006). Seed dormancy and the control of germination. New Phytologist, 171(3), 501-523. https://doi.org/10.1111/j.1469-8137.2006.01787.x
+
+Gutterman, Y. (2002). Seed Germination: Theory and Practice.
+
+Karssen, C. M. (1995). Seed Dormancy and Germination in Plants.
+
+Lozano-Isla, Flavio; Benites-Alfaro, Omar Eduardo; Pompelli, Marcelo Francisco (2019). GerminaR: An R package for germination analysis with the interactive web application “GerminaQuant for R.” Ecological Research, 34(2), 339–346. https://doi.org/10.1111/1440-1703.1275
+
+
