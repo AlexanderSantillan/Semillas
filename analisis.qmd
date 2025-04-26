@@ -16,13 +16,15 @@ format:
 editor_options: 
   chunk_output_type: console
 ---
+
 # Introducción
 
 # Materiales y Métodos
 
 ## Selección e instalacion del material vegetal
+<div style="text-align: justify;">
 Las semillas de _Pisum sativum_ fueron adquiridas en el mercado central de la ciudad de Chachapoyas. Posteriormente, se seleccionaron las semillas más vigorosas y se distribuyeron 25 semillas en cada uno de los 12 tapers, sumando un total de 300 semillas para evaluar la respuesta de las semillas en condiciones de luz y oscuridad a temperatura ambiente. Para medir los índices de germinación en los tapers, se colocó papel toalla en su interior, y aquellos que se iban a mantener en oscuridad fueron cubiertos con papel aluminio. 
-
+</div>
 ## Elaboracion de etiquetas
 Se utilizó el paquete GerminaR (Flavio-Lozano et al., 2019) para realizar etiquetas en R y analizar los principales índices de germinación, las etiquetas se eleboraron de acuerdo al siguiente código
 
@@ -114,14 +116,30 @@ label %>% label_print()
 # 
 ```
 ## Diseño experimental
-Se empleo un Diseño Completamente al Azar (DCA) con dos tratamientos (sin luz y con luz) cada tratamiento contó con 6 repeticiones y 25 unidades experimentales.
+Se empleo un Diseño Completamente al Azar (DCA) con dos tratamientos (sin luz y con luz) cada tratamiento contó con 6 repeticiones y 25 unidades experimentales.Además, para la comparación de medias se empleo la prueba de Duncan. 
 
 # Resultados
 
 ## Semillas germinadas (grs)
 
+![Figura 1](grs.png)
+
+Ambos tratamientos con y sin luz indican no presentar diferencias estadisticamente significativas dado que p > 0.05 con un p de 0.341. Es decir que la luz no tiene un efecto significativo sobre la variable evaluada. Ademas ambos tratamientos tienen una media de 25 teniendo el mismo valor de germinación, finalmente se tiene un coeficiente de variacion nulo donde no hubo variabilidad entre repeticiones, todos obtienen el mismo valor.
+
+![Figura 2](ger.png)
+
+A los 3 días se tiene una germinación casi al 100% para ambos tratamientos. Además se observa que con luz al 3 día hubo mayor germinación que sin luz.
+
 ## Tiempo medio de germinabilidad (mgt)
+![Figura 3](mgt.png)
+
+El p-valor es 0.315, lo cual es mayor que 0.05. Esto indica que no hay una diferencia estadísticamente significativa entre los tratamientos con luz y sin luz en cuanto al tiempo medio de germinabilidad. El tiempo medio general en que germinaron las semillas es de 2.547 días.
 
 ## velocidad de germinación (gsp)
 
+![Figura 4](gsp.png)
+
+No hay diferencias significativas entre los tratamientos con y sin luz respecto a la velocidad de germinación dado que el p-valor es 0.293 lo cual es mayor que 0.05. Es decir, la luz no tuvo un efecto estadísticamente significativo sobre la velocidad de germinación. El promedio general de volocidad de germinacion es 39.519 % 
+
 ## Variación de la germinación (vgt)
+
