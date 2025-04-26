@@ -1,11 +1,11 @@
 ---
-title: "Analisis de germinación en _Pisum sativum_"
-author: "Acuña Ramirez Edinson Pooll,
-         Grandes Castro Brayan Eliseo,
-         Llaja Zuta Erika,
-         Mondragón Herrera Edwin,
-         Santillan Puerta Jaime Alexander,
-         Rojas Campos Griselida"
+title: "Determinación de efectos de luz en germinación de _Pisum sativum_ L."
+author: "Acuña R. E,
+         Grandes C. B,
+         Llaja Z. E,
+         Mondragon H. E,
+         Santillan P. J,
+         Rojas C. G"
 format:
   html:
     toc: true
@@ -18,6 +18,17 @@ editor_options:
 ---
 
 # Introducción
+<div style="text-align: justify;">
+El origen del guisante (Pisum sativum L.) se encuentra en la región del Mediterráneo, principalmente en el Medio Oriente, donde fue domesticado. Fue una parte esencial de la dieta de los cazadores-recolectores al final de la última Edad de Hielo, tanto en el Medio Oriente como en Europa. Evidencias arqueológicas de los milenios X y IX a.C. indican que los guisantes, junto con otras legumbres como las arvejas y los garbanzos, eran consumidos comúnmente antes de ser cultivados. Esto sugiere que la domesticación de las legumbres, incluidos los guisantes, podría haberse producido antes que la de los cereales, marcando una parte significativa de la revolución agrícola que facilitó el establecimiento de asentamientos permanentes.
+
+Los esfuerzos de selección y mejora durante siglos han dado lugar al desarrollo de miles de variedades de guisantes, que ahora se mantienen en colecciones de germoplasma en todo el mundo. Los ancestros silvestres del guisante se encuentran en Irán, Turkmenistán y en partes del norte de África y el sur de Europa.
+
+El cultivo de la arveja (Pisum sativum L.) es fundamental por sus beneficios nutricionales y económicos, especialmente en regiones como el centro y la sierra norte de Ecuador. Su alto contenido proteico (24.1% en grano seco) la convierte en una fuente importante de nutrientes, contribuyendo a la seguridad alimentaria. Además, la arveja mejora la calidad del suelo al fijar nitrógeno, lo que reduce la dependencia de fertilizantes sintéticos y favorece la rotación de cultivos, promoviendo una agricultura más sostenible.
+
+Este cultivo se adapta bien a climas templados y fríos, permitiendo su cultivo a altitudes entre 2,400 y 3,200 metros sobre el nivel del mar. La posibilidad de obtener hasta dos cosechas anuales, especialmente en variedades de cosecha verde, favorece el rendimiento y tiene un impacto positivo en las economías rurales.
+
+La germinación del cultivo es un proceso crucial, ya que marca el comienzo del ciclo de vida de la planta y determina el éxito de su establecimiento. En condiciones óptimas, la germinación permite que las semillas liberen su potencial de crecimiento. Las temperaturas son uno de los factores ambientales más influyentes, ya que afectan tanto la velocidad de germinación como la capacidad total de germinación de las semillas. En general, las semillas germinan más rápidamente a temperaturas más altas, pero las bajas temperaturas, si se les da suficiente tiempo, también pueden permitir una buena germinación.
+</div>
 
 # Materiales y Métodos
 
@@ -26,7 +37,9 @@ editor_options:
 Las semillas de _Pisum sativum_ fueron adquiridas en el mercado central de la ciudad de Chachapoyas. Posteriormente, se seleccionaron las semillas más vigorosas y se distribuyeron 25 semillas en cada uno de los 12 tapers, sumando un total de 300 semillas para evaluar la respuesta de las semillas en condiciones de luz y oscuridad a temperatura ambiente. Para medir los índices de germinación en los tapers, se colocó papel toalla en su interior, y aquellos que se iban a mantener en oscuridad fueron cubiertos con papel aluminio. 
 </div>
 ## Elaboracion de etiquetas
-Se utilizó el paquete GerminaR (Flavio-Lozano et al., 2019) para realizar etiquetas en R y analizar los principales índices de germinación, las etiquetas se eleboraron de acuerdo al siguiente código
+<div style="text-align: justify;">
+Se utilizó el paquete GerminaR (Flavio-Lozano et al., 2019) para realizar etiquetas en R y analizar los principales índices de germinación, las etiquetas se eleboraron de acuerdo al siguiente código:
+</div>
 
 ```{r}
 source("https://inkaverse.com/setup.r")
@@ -116,30 +129,48 @@ label %>% label_print()
 # 
 ```
 ## Diseño experimental
-Se empleo un Diseño Completamente al Azar (DCA) con dos tratamientos (sin luz y con luz) cada tratamiento contó con 6 repeticiones y 25 unidades experimentales.Además, para la comparación de medias se empleo la prueba de Duncan. 
+<div style="text-align: justify;">
+Se empleo un Diseño Completamente al Azar (DCA) con dos tratamientos (sin luz y con luz) cada tratamiento contó con 6 repeticiones y 25 unidades experimentales.Además, para la comparación de medias se empleo la prueba de Duncan.
+</div>
 
 # Resultados
 
 ## Semillas germinadas (grs)
 
-![Figura 1](grs.png)
-
+<div style="text-align: justify;">
 Ambos tratamientos con y sin luz indican no presentar diferencias estadisticamente significativas dado que p > 0.05 con un p de 0.341. Es decir que la luz no tiene un efecto significativo sobre la variable evaluada. Ademas ambos tratamientos tienen una media de 25 teniendo el mismo valor de germinación, finalmente se tiene un coeficiente de variacion nulo donde no hubo variabilidad entre repeticiones, todos obtienen el mismo valor.
+</div>
+
+![Figura 1.](grs.png)
+
+<div style="text-align: justify;">
+A los 3 días se tiene una germinación casi al 100% para ambos tratamientos. Además se observa que con luz al 3 día hubo mayor germinación que sin luz.
+</div>
 
 ![Figura 2](ger.png)
 
-A los 3 días se tiene una germinación casi al 100% para ambos tratamientos. Además se observa que con luz al 3 día hubo mayor germinación que sin luz.
-
 ## Tiempo medio de germinabilidad (mgt)
+
+<div style="text-align: justify;">
+El p-valor es 0.315, lo cual es mayor que 0.05. Esto indica que no hay una diferencia estadísticamente significativa entre los tratamientos con luz y sin luz en cuanto al tiempo medio de germinabilidad. El tiempo medio general en que germinaron las semillas es de 2.547 días.
+</div>
+
+
 ![Figura 3](mgt.png)
 
-El p-valor es 0.315, lo cual es mayor que 0.05. Esto indica que no hay una diferencia estadísticamente significativa entre los tratamientos con luz y sin luz en cuanto al tiempo medio de germinabilidad. El tiempo medio general en que germinaron las semillas es de 2.547 días.
 
 ## velocidad de germinación (gsp)
 
-![Figura 4](gsp.png)
+<div style="text-align: justify;">
+No hay diferencias significativas entre los tratamientos con y sin luz respecto a la velocidad de germinación dado que el p-valor es 0.293 lo cual es mayor que 0.05. Es decir, la luz no tuvo un efecto estadísticamente significativo sobre la velocidad de germinación. El promedio general de volocidad de germinacion es 39.519 %.
+</div>
 
-No hay diferencias significativas entre los tratamientos con y sin luz respecto a la velocidad de germinación dado que el p-valor es 0.293 lo cual es mayor que 0.05. Es decir, la luz no tuvo un efecto estadísticamente significativo sobre la velocidad de germinación. El promedio general de volocidad de germinacion es 39.519 % 
+![Figura 4](gsp.png)
 
 ## Variación de la germinación (vgt)
 
+<div style="text-align: justify;">
+
+</div>
+
+![Figura 5](vgt.png)
